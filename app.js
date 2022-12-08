@@ -18,17 +18,11 @@ app.get("/", (req, res) => {
 const userRoute = require("./routes/auth");
 app.use("/api/users/", userRoute);
 
-// ! Artist
-
 const artistRoutes = require("./routes/artist");
 app.use("/api/artist/", artistRoutes);
 
-// ! Album
-
 const albumRoutes = require("./routes/album");
 app.use("/api/albums/", albumRoutes);
-
-// ! Songs
 
 const songRoutes = require("./routes/songs");
 app.use("/api/songs/", songRoutes);
